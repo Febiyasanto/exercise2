@@ -5,7 +5,7 @@ package URK24CS1263;
 
 import java.util.Scanner;
 
-public class array2 {
+public class Arrayvariable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

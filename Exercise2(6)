@@ -37,7 +37,7 @@ public class array2 {
         } else {
             System.out.println("The number not available");
         }
-            System.out.println("URK24CS1263-FEBIYA S ANTO");
         }
+   System.out.println("URK24CS1263-FEBIYA S ANTO");
     }
 }

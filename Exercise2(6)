@@ -1,8 +1,6 @@
 //URK24CS1263-FEBIYA S ANTO
 
 package URK24CS1263;
-
-
 import java.util.Scanner;
 
 public class Arrayvariable {

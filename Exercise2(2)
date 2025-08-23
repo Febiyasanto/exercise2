@@ -3,7 +3,6 @@
 package URK24CS1263;
 
 import java.util.Scanner;
-
 public class smallestnumber {
 
     public static void main(String[] args) {

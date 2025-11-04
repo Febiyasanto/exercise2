@@ -1,51 +1,34 @@
-// URK24CS1263-FEBIYA S ANTO
-
+// URK24CS1263 - FEBIYA S ANTO
 package URK24CS1263;
-
 import java.util.Scanner;
 
 public class SmallestNumber {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // Input size
-        System.out.print("Enter the number of data: ");
-        int array_size = scanner.nextInt();
-        int[] numbers = new int[array_size];
+        System.out.print("Enter how many numbers: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
 
-        // Input numbers
         System.out.print("Enter the numbers: ");
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
 
-        // Input X
-        System.out.print("X = ");
-        int x = scanner.nextInt();
+        System.out.print("Enter X: ");
+        int x = sc.nextInt();
 
         int count = 0;
-        String result = "";
-
-        // Find numbers smaller than X
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < x) {
+        System.out.print("Numbers smaller than " + x + " are: ");
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < x) {
+                System.out.print(arr[i] + " ");
                 count++;
-                result += numbers[i] + ",";
             }
         }
 
-        // Output
-        System.out.println("Count = " + count);
-        if (count > 0) {
-            result = result.substring(0, result.length() - 1); // remove last comma
-            System.out.println("Numbers are = " + result);
-        } else {
-            System.out.println("No numbers smaller than " + x);
-        }
-
-        System.out.println("URK24CS1263-FEBIYA S ANTO");
-        scanner.close();
+        System.out.println("\nCount = " + count);
+        System.out.println("URK24CS1263 - FEBIYA S ANTO");
+        sc.close();
     }
 }
-

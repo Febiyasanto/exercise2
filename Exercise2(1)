@@ -1,0 +1,32 @@
+// URK24CS1263 - FEBIYA S ANTO
+package URK24CS1263;
+import java.util.Scanner;
+
+public class OddEvenSum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter how many numbers: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        System.out.print("Enter the numbers: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int evenSum = 0, oddSum = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % 2 == 0)
+                evenSum += arr[i];
+            else
+                oddSum += arr[i];
+        }
+
+        System.out.println("Even = " + evenSum + "  Odd = " + oddSum);
+        System.out.println("URK24CS1263 - FEBIYA S ANTO");
+
+        sc.close();
+    }
+}

@@ -1,0 +1,48 @@
+// URK24CS1263 - FEBIYA S ANTO
+package URK24CS1263;
+import java.util.Scanner;
+
+public class UniqueNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter how many numbers: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        System.out.print("Enter the numbers: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("X = ");
+        int x = sc.nextInt(); // Just to match question format, not used in logic
+
+        int count = 0;
+        String result = "";
+
+        for (int i = 0; i < n; i++) {
+            int freq = 0;
+            for (int j = 0; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    freq++;
+                }
+            }
+            if (freq == 1) { // means unique number
+                count++;
+                result += arr[i] + ",";
+            }
+        }
+
+        if (count > 0) {
+            result = result.substring(0, result.length() - 1); // remove last comma
+            System.out.println("Count = " + count);
+            System.out.println("Unique numbers are = " + result);
+        } else {
+            System.out.println("No unique numbers found");
+        }
+
+        System.out.println("URK24CS1263 - FEBIYA S ANTO");
+        sc.close();
+    }
+}
